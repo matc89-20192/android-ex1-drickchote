@@ -5,9 +5,39 @@
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent" tools:context="matc89.exercicio1.MainActivity">
 
-    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-        android:text="Hello World!" app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/editNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="234dp" />
 
+    <Button
+        android:id="@+id/btnCumprimentar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onPress"
+        android:text="Cumprimentar "
+        app:layout_constraintLeft_toLeftOf="@+id/editNome"
+        app:layout_constraintRight_toRightOf="@+id/editNome"
+        app:layout_constraintTop_toBottomOf="@+id/editNome" />
+
+    <TextView
+        android:id="@+id/labelMensagem"
+        android:layout_width="191dp"
+        android:layout_height="44dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Alô, Mundo"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="@+id/editNome"
+        app:layout_constraintRight_toRightOf="@+id/editNome"
+        tools:layout_editor_absoluteY="168dp"
+        app:layout_constraintHorizontal_bias="0.507" />
 </android.support.constraint.ConstraintLayout>
