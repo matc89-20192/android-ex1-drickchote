@@ -11,9 +11,16 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
-        tools:layout_editor_absoluteX="94dp"
-        tools:layout_editor_absoluteY="234dp" />
+        android:text=""
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintVertical_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
 
     <Button
         android:id="@+id/btnCumprimentar"
@@ -21,12 +28,13 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="82dp"
         android:onClick="onPress"
         android:text="Cumprimentar "
         app:layout_constraintLeft_toLeftOf="@+id/editNome"
         app:layout_constraintRight_toRightOf="@+id/editNome"
-        app:layout_constraintTop_toBottomOf="@+id/editNome" />
+        app:layout_constraintTop_toBottomOf="@+id/editNome"
+        app:layout_constraintHorizontal_bias="0.354" />
 
     <TextView
         android:id="@+id/labelMensagem"
@@ -34,10 +42,14 @@
         android:layout_height="44dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:text="Alô, Mundo"
+        android:text="Alô, Mundo!"
         android:textSize="30sp"
         app:layout_constraintLeft_toLeftOf="@+id/editNome"
         app:layout_constraintRight_toRightOf="@+id/editNome"
-        tools:layout_editor_absoluteY="168dp"
-        app:layout_constraintHorizontal_bias="0.507" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintHorizontal_bias="0.581"
+        app:layout_constraintVertical_bias="0.634" />
 </android.support.constraint.ConstraintLayout>
